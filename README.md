@@ -9,8 +9,8 @@ Copy the `Markdownjs` directory into `<bugzilla-root>/extensions` directory and 
 
 ##Dependencies
 
-[Jquery](http://jquery.com/) : v1.11.1
-[Markdown-js](https://github.com/evilstreak/markdown-js): v0.6.0-beta1
+* [Jquery](http://jquery.com/) : v1.11.1
+* [Markdown-js](https://github.com/evilstreak/markdown-js): v0.6.0-beta1
 
 #Compatibility
 
