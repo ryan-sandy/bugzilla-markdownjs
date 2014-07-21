@@ -26,7 +26,7 @@ The extension finds all elements with the class `bz_commen_text`, takes their te
 
 For the comment previews, the extension uses the jquery `on` method to bind to the input events of the `#comment` element. It takes the input, passes it through markdown-js and places the output in the `#bz_preview` element.
 
-This extension relies on the following template hooks: `global/footer-end`, global/header-additional_header`, `bug/edit-after_comments_textarea`, and `bug/create/create-end`.
+This extension relies on the following template hooks: `global/footer-end`, `global/header-additional_header`, `bug/edit-after_comments_textarea`, and `bug/create/create-end`.
 
 The styles.css set the white-space to normal, and change the font to be more readable. If you want better styling, send me a pull request.
 
