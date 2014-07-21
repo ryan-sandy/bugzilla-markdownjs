@@ -1,4 +1,45 @@
 <div class="bz_comment">
-  <label><b>Preview:</b></label>
-  <div id="bz_preview" class="bz_comment_text"></div>
+  <label><b>Preview:</b>  <a href="#" id="syntax-help-btn">Formatting Help</a></label>
+  <div id="bz_preview" class="markdown"></div>
+  <table id="syntax-help-show" style="display:none">
+    <thead>
+      <tr>
+        <th>What you type</th>
+        <th>What you see</th>
+      </tr>
+    </thead>
+    <tr>
+      <td class="markdown-help-raw">*italics*</td>
+      <td class="markdown-help">*italics*</td>
+    </tr>
+    <tr>
+      <td class="markdown-help-raw">**bold**</td>
+      <td class="markdown-help">**bold**</td>
+    </tr>
+    <tr>
+      <td class="markdown-help-raw">[google](http://google.com)</td>
+      <td class="markdown-help">[google](http://google.com)</td>
+    </tr>
+    <tr>
+      <td class="markdown-help-raw">* item 1 <br>* item 2<br>* item 3</td>
+      <td class="markdown-help">
+* item 1
+* item 2
+* item 3
+      </td>
+    </tr>
+    <tr>
+      <td class="markdown-help-raw">&#62; quoted</td>
+      <td class="markdown-help">&#62; quoted</td>
+    </tr>
+    <tr>
+      <td class="markdown-help-raw">Code needs to be started <br>with four spaces</td>
+      <td class="markdown-help">    Code needs to be started
+    with four spaces.</td>
+    </tr>
+    <tr>
+      <td>You can also `inline` code.</td>
+      <td class="markdown-help">You can aslo `inline` code.</td>
+    </tr>
+  </table>
 </div>

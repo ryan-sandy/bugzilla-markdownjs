@@ -1,4 +1,14 @@
-.bz_comment_text {
+.markdown {
   white-space: normal;
   font-family: Verdana, sans-serif;
+}
+
+.markdown code {
+  white-space: pre;
+  font-family:monospace;
+}
+
+.markdown pre {
+  margin-left: 1em;
+  padding-left:40px;
 }
