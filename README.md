@@ -1,9 +1,17 @@
 Bugzilla Markdownjs
 ===================
 
-This is a markdown extension for bugzilla. All rendering is done client side through javascript. It renders the comments in markdown, and has a live preview in the new bug and edit bug areas.
+This is a markdown extension for bugzilla. All rendering is done client side through javascript. It dynamically adds markdown elements to comments and allows you to switch between the raw view and markdown. It has a live preview when submitting or commenting a bug.
 
-##Installation
+#Features
+
+* Markdown parsing of all comments
+* Ability to view raw comment text
+* Live markdown preview when creating or commenting
+* Unobtrusive & customizable styling
+* Formatting help information
+
+#Installation
 
 Copy the `Markdownjs` directory into `<bugzilla-root>/extensions` directory and run `checksetup.pl`.
 
@@ -22,7 +30,7 @@ Please help this module by testing on more versions.
 
 #Overview
 
-The extension finds all elements with the class `bz_commen_text`, takes their text passes it to markdown-js, and appends the markdown-js output into the element's html.
+The extension finds all elements with the class `bz_commen_text`, takes their text passes it to markdown-js, and appends the markdown-js output into a new `div` after the comment. The raw comment is hidden by default. You can toggle between the markdown element and raw element by clicking on a link within the comment.
 
 For the comment previews, the extension uses the jquery `on` method to bind to the input events of the `#comment` element. It takes the input, passes it through markdown-js and places the output in the `#bz_preview` element.
 
@@ -40,11 +48,13 @@ Please report bugs in the github issue tracker. (I know it's blasphemy for a bug
 
 ###Current
 
-v0.1.0 Styling Release
+v1.0.0 Stable Release 
 
 ###Past Releases
 
-* v0.0.0 Inital Release
+* v1.0.0 Stable Release
+* v0.1.0 Styling Release
+* v0.0.0 Initial Release
 
 #License
 

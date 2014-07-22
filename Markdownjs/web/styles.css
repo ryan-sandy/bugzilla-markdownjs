@@ -12,3 +12,7 @@
   margin-left: 1em;
   padding-left:40px;
 }
+
+.markdown-help p, ul{
+  margin: 0px;
+}
